@@ -1,4 +1,6 @@
-class BasicsDemo {
+import java.math.BigDecimal;
+
+class BasicsDemo{
     static void print() {
         System.out.println("\n\nInside print ...");
         System.out.println("Hello world!");
@@ -24,7 +26,13 @@ class BasicsDemo {
     }
 
     public static void main(String[] args) {
-        primitives();
+        //primitives();
+        System.out.println(1 - 0.9);
+
+        BigDecimal _first = new BigDecimal("0.1");
+        BigDecimal second = new BigDecimal("0.2");
+        System.out.println(_first.add(second));
+
     }
 
 }
