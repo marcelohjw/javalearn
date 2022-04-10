@@ -13,7 +13,7 @@ class BasicsDemo{
     }
     
     static void primitives() {
-        System.out.println("\n\nInside primitives ...");
+        System.out.println("\nInside primitives V|V");
         int intHex = 0x0041;
         System.out.println("intHex: " + intHex);
 
@@ -23,10 +23,24 @@ class BasicsDemo{
 
         int intOctal = 0101;
         System.out.println("intOctal: " + intOctal);
+
+        // Char uses
+
+        char charInt = 65;
+        System.out.println("charInt: " + charInt);
+
+        char charHex = 0x0041;
+        System.out.println("charHex: " + charHex);
+
+        char charBinary = 0b01000_001;
+        System.out.println("charBinary: " + charBinary);
+
     }
 
     public static void main(String[] args) {
-        //primitives();
+        System.out.println("Primitives: ");
+        primitives();
+        System.out.println("---------------------");
         System.out.println(1 - 0.9);
 
         BigDecimal _first = new BigDecimal("0.1");
