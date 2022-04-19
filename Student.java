@@ -8,8 +8,7 @@ class Student {
     double gpa = 3.8;
     char degree;
     boolean international;
-    double tuitionFees = 12000.0;
-    double internationalFees = 5000.0;
+    double tuitionFees = 12000.0, internationalFees = 5000.0;
 
     void compute() {
         computeCount = computeCount + 1;
@@ -36,7 +35,7 @@ class Student {
         student1.age = 18;
         student1.phone = 987_654_321l;
         student1.gpa = 3.8;
-        student1.degree = '\u0042'; //Unicode for B
+        student1.degree = '\u0042'; // Unicode for B
         student1.international = false;
         student1.compute();
 
@@ -48,7 +47,7 @@ class Student {
         student2.age = 20;
         student2.phone = 983_652_323l;
         student2.gpa = 3.5;
-        student2.degree = '\u0046'; //Unicode
+        student2.degree = '\u0046'; // Unicode
         student2.international = true;
         student2.compute();
 
