@@ -1,5 +1,5 @@
 class Student {
-    static int computeCount;
+    static int computeCount; // Static variable will hold values
     int id;
     String name;
     String gender;
@@ -62,5 +62,8 @@ class Student {
         student3.degree = 'M';
         student3.international = true;
         student3.compute();
+
+        System.out.println("Student compute count: " + Student.computeCount);
+
     }
 }
