@@ -37,6 +37,11 @@ class BasicsDemo{
 
     }
 
+    static void typeCasting() {
+        System.out.println("\nInside typeCasting..");
+        // Explicit Casting
+    }
+
     public static void main(String[] args) {
         System.out.println("Primitives: ");
         primitives();
@@ -46,6 +51,7 @@ class BasicsDemo{
         BigDecimal _first = new BigDecimal("0.1");
         BigDecimal second = new BigDecimal("0.2");
         System.out.println(_first.add(second));
+        typeCasting();
 
     }
 
