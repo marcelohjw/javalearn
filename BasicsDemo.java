@@ -40,6 +40,33 @@ class BasicsDemo{
     static void typeCasting() {
         System.out.println("\nInside typeCasting..");
         // Explicit Casting
+        long y = 42;
+        //  int x = y;
+        int x = (int) y;
+
+        // Information loss due to out-of-range
+        byte narrowByte = (byte)123456;
+        System.out.println("narrowByte: " + narrowByte);
+
+        // Truncation
+        int iTruncated = (int)0.99;
+        System.out.println("iTruncated: " + iTruncated);
+
+        // Implicit cast (int to long)
+        y = x;
+
+        // Implicit cast (char to int)
+        char charA = 'A';
+        int iInt = charA; //65
+        System.out.println("iInt: " + iInt);
+
+        // Byte to char using an explicit cast
+        byte bByte = 65;
+        charA = (char)bByte; // Special convetion (widening from byte --> int followed by narrowing from int --> char)
+        System.out.println("charA: " + charA);
+        
+
+
     }
 
     public static void main(String[] args) {
