@@ -98,18 +98,42 @@ class BasicsDemo{
         */
     }
 
+    static void threeDimensionalArrays() {
+        System.out.println("\nInside 3D Arrays.. \n");
+        int[][][] unitsSold = new int[][][] {
+            { // New York
+                {0, 0, 0, 0}, // Jan
+                {0, 0, 0, 0}, // Feb
+                {0, 0, 0, 0}, // Mar
+                {0, 850, 0, 0}, // Apr
+            },
+            { // San Francisco
+                {0, 0, 0, 0}, // Jan
+                {0, 0, 0, 0}, // Feb
+                {0, 0, 0, 0}, // Mar
+                {0, 0, 0, 0}, // Apr
+            },
+            { // 
+                {0, 0, 0, 0}, // Jan
+                {0, 0, 0, 0}, // Feb
+                {0, 0, 0, 0}, // Mar
+                {0, 0, 0, 0}, // Apr
+            },
+            { // 
+                {0, 0, 0, 0}, // Jan
+                {0, 0, 0, 0}, // Feb
+                {0, 0, 0, 0}, // Mar
+                {0, 0, 0, 0}, // Apr
+            },
+        };
+
+        System.out.println("unitsSold[0][3][1]: " + unitsSold[0][3][1]);
+    }
+
 
     public static void main(String[] args) {
-        //System.out.println("Primitives: ");
-        //primitives();
-        //System.out.println("---------------------");
-        //System.out.println(1 - 0.9);
-
-        //BigDecimal _first = new BigDecimal("0.1");
-        //BigDecimal second = new BigDecimal("0.2");
-        //System.out.println(_first.add(second));
-        //typeCasting();
-        arrays();
+        //arrays();
+        threeDimensionalArrays();
     }
 
 }
