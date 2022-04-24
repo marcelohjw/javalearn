@@ -130,10 +130,14 @@ class BasicsDemo{
         System.out.println("unitsSold[0][3][1]: " + unitsSold[0][3][1]);
     }
 
+    static double sum(double x, double y) {
+        return x + y;
+    }
+
 
     public static void main(String[] args) {
-        //arrays();
-        threeDimensionalArrays();
+        double res = sum(4, 5);
+        System.out.println(res);
     }
 
 }
