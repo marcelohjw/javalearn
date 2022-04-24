@@ -135,8 +135,13 @@ class BasicsDemo{
     }
 
 
+    static double avg(double x, double y) {
+        double sumy = sum(x, y);
+        return sumy/2;
+    }
+
     public static void main(String[] args) {
-        double res = sum(4, 5);
+        double res = avg(10, 2);
         System.out.println(res);
     }
 
