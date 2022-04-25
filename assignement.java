@@ -17,7 +17,7 @@ class CurrencyConverter {
         System.out.println("mexican_peso: " + exchangeRates[4]);   
         System.out.println("_yen: " + exchangeRates[5]);   
         System.out.println("$australian: " + exchangeRates[6]);
-        System.out.println("Currency's Number: " + exchangeRates.length);
+        System.out.println("Currency's Number: " + exchangeRates[exchangeRates.length-1]);
 
     }
 
