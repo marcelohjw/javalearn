@@ -14,6 +14,10 @@ class CurrencyConverter {
         return exchangeRates[arrayIndex];
     }
 
+    double computeTransferAmount(int arrayIndex, double amount) {
+        return amount * getExchangeRate(arrayIndex);
+    }
+
     void printCurrencies () {
         System.out.println("rupee: " + exchangeRates[0]);
         System.out.println("dirham: " + exchangeRates[1]);   
@@ -39,7 +43,9 @@ class CurrencyConverter {
         System.out.println("\nGetting chilean peso..\n");
         double get = cc.getExchangeRate(3);
         System.out.println(get);
-
+        System.out.println("\nComputing transfer amount..\n");
+        double amountx = cc.computeTransferAmount(2, 1000);
+        System.out.println(amountx);
 
     }
 }
