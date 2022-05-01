@@ -37,15 +37,15 @@ class CurrencyConverter {
         double[] ratex = {63.0, 3.0, 3.0, 595.0, 18.0, 107.0, 2.0};
         cc.setExchangeRates(ratex);
         cc.printCurrencies();
-        cc.updateExchangeRates(2, 4.5); 
-        System.out.println("\nUpdating real money..\n");
+        cc.updateExchangeRates(2, 4.5); // Change the real cotation
+        System.out.println("\nUpdating real cotation..\n");
         cc.printCurrencies();
         System.out.println("\nGetting chilean peso..\n");
         double get = cc.getExchangeRate(3);
         System.out.println(get);
-        System.out.println("\nComputing transfer amount..\n");
         double amountx = cc.computeTransferAmount(2, 1000);
-        System.out.println(amountx);
+        System.out.println("\nComputing transfer amount.. 1000 dollars to real = " + amountx);
+
 
     }
 }
