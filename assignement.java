@@ -18,6 +18,10 @@ class CurrencyConverter {
         return amount * getExchangeRate(arrayIndex);
     }
 
+    double computeTransferFee(int countryIndex, double amount) {
+        // For assignement 3
+    }
+
     void printCurrencies () {
         System.out.println("rupee: " + exchangeRates[0]);
         System.out.println("dirham: " + exchangeRates[1]);   
