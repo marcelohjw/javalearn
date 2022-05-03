@@ -20,6 +20,8 @@ class CurrencyConverter {
 
     double computeTransferFee(int countryIndex, double amount) {
         // For assignement 3
+        System.out.println("Test");
+        return 0;
     }
 
     void printCurrencies () {
