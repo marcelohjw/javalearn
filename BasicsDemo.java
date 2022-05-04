@@ -140,9 +140,17 @@ class BasicsDemo{
         return sumy/2;
     }
 
+    static void go(int[] array) {
+        System.out.println("array[0] = " + array[0]);
+        System.out.println("array[1] = " + array[1]);
+        array[1] = 22;
+
+    }
+
     public static void main(String[] args) {
-        double res = avg(10, 2);
-        System.out.println(res);
+        int[] array = {7, 2};
+        go(array);
+        System.out.println("array[1] = " + array[1]);   
     }
 
 }
