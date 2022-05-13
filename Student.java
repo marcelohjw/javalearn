@@ -18,8 +18,8 @@ class Student {
             double newGpa, 
             char newDegree, 
             boolean isInternational) {
-        System.out.println("CONSTRUCTOR ON");
         System.out.println("----------------");
+        System.out.println("CONSTRUCTOR ON");
         id = newId;
         name = newName;
         gender = newGender;
@@ -37,7 +37,7 @@ class Student {
         if (international) {
             tuitionFees = tuitionFees + internationalFees;
         }
-        System.out.println("\nId: " + id);
+        System.out.println("Id: " + id);
         System.out.println("Name: " + name);
         System.out.println("Gender: " + gender);
         System.out.println("Age: " + age);
@@ -45,7 +45,7 @@ class Student {
         System.out.println("GPA: " + gpa);
         System.out.println("Degree: " + degree);
         System.out.println("tuitionFees: " + tuitionFees);
-        System.out.println("compute count: " + computeCount);
+        System.out.println("compute count: " + computeCount + "\n");
     }
 
     public static void main (String[] args) {
