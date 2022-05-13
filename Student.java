@@ -1,5 +1,5 @@
 class Student {
-    static int computeCount; // Static variable will hold values
+    static int studentCount; // Static variable will hold values
     int id;
     String name;
     String gender;
@@ -28,14 +28,11 @@ class Student {
         gpa = newGpa;
         degree = newDegree;
         international = isInternational;
-    }
 
-    Student() {}
-
-    void compute() {
-        computeCount = computeCount + 1;
+        studentCount = studentCount + 1;
         if (international) {
             tuitionFees = tuitionFees + internationalFees;
+            //return;
         }
         System.out.println("Id: " + id);
         System.out.println("Name: " + name);
@@ -45,38 +42,24 @@ class Student {
         System.out.println("GPA: " + gpa);
         System.out.println("Degree: " + degree);
         System.out.println("tuitionFees: " + tuitionFees);
-        System.out.println("compute count: " + computeCount + "\n");
+        System.out.println("Student Number: " + studentCount + "\n");
+    }
+
+    Student() {}
+
+    void compute() {
+        
     }
 
     public static void main (String[] args) {
-        Student student1 = new Student( 
-                                        1000,
-                                        "Marcelo",
-                                        "male",
-                                        18,
-                                        987_654_321l,
-                                        3.8,
-                                        '\u0042', // Unicode for B
-                                        false
-                                       );
-        student1.compute();
+        System.out.println("STUDENTS\n");
+        Student student1 = new Student(1000, "Marcelo", "male", 18, 987_654_321l, 3.8, '\u0042', false);
 
-        Student student2 = new Student(
-                                        1001,
-                                        "Maya",
-                                        "female",
-                                        28,
-                                        983_652_323l,
-                                        3.5,
-                                        '\u0046',
-                                        true
-        );
-        student2.compute();
+        Student student2 = new Student(1001, "Maya", "female", 28, 983_652_323l, 3.5, '\u0046', true);
 
-        Student student3 = new Student();
-        student3.compute();
+        Student student3 = new Student(1002, "Anitta", "female", 29, 444_669_767l, 3.0, '\u0040', true);
 
-        System.out.println("Student compute count: " + Student.computeCount);
+        System.out.println("Student count: " + Student.studentCount);
 
     }
 }
