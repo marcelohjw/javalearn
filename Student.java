@@ -11,9 +11,13 @@ class Student {
     double tuitionFees = 12000.0, internationalFees = 5000.0;
 
     /** PARAMETRIZED CONSTRUCTOR */
+    Student(int newId, String newName, String newGender,int newAge, long newPhone, double newGpa, char newDegree) {
+        this(newId, newName, newGender, newAge, newPhone, newGpa, newDegree, false);
+    }
+
     Student(int newId, String newName, String newGender,int newAge, long newPhone, double newGpa, char newDegree, boolean isInternational) {
         System.out.println("----------------");
-        System.out.println("CONSTRUCTOR ON");
+        System.out.println("CONSTRUCTOR 2 ON");
         id = newId;
         name = newName;
         gender = newGender;
@@ -28,27 +32,6 @@ class Student {
             tuitionFees = tuitionFees + internationalFees;
             //return;
         }
-        System.out.println("Id: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Gender: " + gender);
-        System.out.println("Age: " + age);
-        System.out.println("Phone: " + phone);
-        System.out.println("GPA: " + gpa);
-        System.out.println("Degree: " + degree);
-        System.out.println("tuitionFees: " + tuitionFees);
-        System.out.println("Student Number: " + studentCount + "\n");
-    }
-
-    Student(int newId, String newName, String newGender,int newAge, long newPhone, double newGpa, char newDegree) {
-        System.out.println("----------------");
-        System.out.println("CONSTRUCTOR 2 ON");
-        id = newId;
-        name = newName;
-        gender = newGender;
-        age = newAge;
-        phone = newPhone;
-        gpa = newGpa;
-        degree = newDegree;
 
         studentCount = studentCount + 1;
         System.out.println("Id: " + id);
@@ -60,12 +43,6 @@ class Student {
         System.out.println("Degree: " + degree);
         System.out.println("tuitionFees: " + tuitionFees);
         System.out.println("Student Number: " + studentCount + "\n");
-    }
-
-    Student() {}
-
-    void compute() {
-        
     }
 
     public static void main (String[] args) {
