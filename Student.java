@@ -10,7 +10,6 @@ class Student {
     boolean international;
     double tuitionFees = 12000.0, internationalFees = 5000.0;
 
-    /** PARAMETRIZED CONSTRUCTOR */
     Student(int id, String name, String gender,int age, long phone, double  gpa, char degree) {
         this(id, name, gender, age, phone, gpa, degree, false); // Invocation Statement
         System.out.println("----------------");
@@ -38,6 +37,8 @@ class Student {
         }
 
         studentCount = studentCount + 1;
+
+        /*
         System.out.println("Id: " + this.id);
         System.out.println("Name: " + this.name);
         System.out.println("Gender: " + this.gender);
@@ -47,6 +48,7 @@ class Student {
         System.out.println("Degree: " + this.degree);
         System.out.println("tuitionFees: " + tuitionFees);
         System.out.println("Student Number: " + studentCount + "\n");
+        */
     }
 
     boolean updateProfile(String name) {
