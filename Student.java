@@ -10,6 +10,8 @@ class Student {
     boolean international;
     double tuitionFees = 12000.0, internationalFees = 5000.0;
 
+    Student() {}
+
     Student(int id, String name, String gender,int age, long phone, double  gpa, char degree) {
         this(id, name, gender, age, phone, gpa, degree, false); // Invocation Statement
         System.out.println("----------------");
