@@ -13,11 +13,13 @@ class Student {
     /** PARAMETRIZED CONSTRUCTOR */
     Student(int newId, String newName, String newGender,int newAge, long newPhone, double newGpa, char newDegree) {
         this(newId, newName, newGender, newAge, newPhone, newGpa, newDegree, false);
+        System.out.println("----------------");
+        System.out.println("SECONDARY CONSTRUCTOR\n");
     }
 
     Student(int newId, String newName, String newGender,int newAge, long newPhone, double newGpa, char newDegree, boolean isInternational) {
         System.out.println("----------------");
-        System.out.println("CONSTRUCTOR 2 ON");
+        System.out.println("PRIMARY CONSTRUCTOR");
         id = newId;
         name = newName;
         gender = newGender;
