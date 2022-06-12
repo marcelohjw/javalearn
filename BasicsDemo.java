@@ -159,7 +159,7 @@ class BasicsDemo{
 
     }
 
-    static boolean isOddEven(int x) {
+    static boolean isEvenOdd(int x) {
         if(x%2 == 0) {
             return true;
         } else {
@@ -174,7 +174,7 @@ class BasicsDemo{
         System.out.println("x-= 5: " + (x-=5));
         System.out.println("x*= 5: " + (x*=5));
         System.out.println("x/= 5: " + (x/=5));
-        System.out.println("Is " + x + " even?: " + isOddEven(x));
+        System.out.println("Is " + x + " even?: " + isEvenOdd(x));
         System.out.println("x%= 5: " + (x%=5));
     }
 
