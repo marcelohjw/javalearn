@@ -130,6 +130,54 @@ class BasicsDemo{
         System.out.println("unitsSold[0][3][1]: " + unitsSold[0][3][1]);
     }
 
+    static void preAndPost() {
+        System.out.println("\nInside preAndPost ...");
+
+        int x = 5;
+
+        //x++;
+
+        //System.out.println("x: " + x);
+
+        //int y = x++;
+
+        //System.out.println("y: " + y + ", x: " + x);
+
+
+        int index = 0;
+        int[] array = new int[3];
+        array[index] = 10;
+        System.out.println(array[index]);
+        index++;
+
+        array[index] = 20;
+        System.out.println(array[index]);
+        index++;
+
+        array[index] = 30;
+        System.out.println(array[index]);   
+
+    }
+
+    static boolean isOddEven(int x) {
+        if(x%2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    static void compoundAritmeticAssignment() {
+        int x = 100;
+
+        System.out.println("x+= 5: " + (x+=5));
+        System.out.println("x-= 5: " + (x-=5));
+        System.out.println("x*= 5: " + (x*=5));
+        System.out.println("x/= 5: " + (x/=5));
+        System.out.println("Is " + x + " even?: " + isOddEven(x));
+        System.out.println("x%= 5: " + (x%=5));
+    }
+
     static double sum(double x, double y) {
         return x + y;
     }
@@ -148,9 +196,8 @@ class BasicsDemo{
     }
 
     public static void main(String[] args) {
-        int[] array = {7, 2};
-        go(array);
-        System.out.println("array[1] = " + array[1]);   
+
+        compoundAritmeticAssignment();   
     }
 
 }
