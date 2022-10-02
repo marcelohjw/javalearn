@@ -14,15 +14,19 @@ class Student {
 
     Student(int id, String name, String gender,int age, long phone, double  gpa, char degree) {
         this(id, name, gender, age, phone, gpa, degree, false); // Invocation Statement
+        /**
         System.out.println("----------------");
         System.out.println("SECONDARY CONSTRUCTOR\n");
         System.out.println("----------------");
+        **/
 
     }
 
     Student(int id, String name, String gender,int age, long phone, double  gpa, char degree, boolean international) {
+        /**
         System.out.println("----------------");
         System.out.println("PRIMARY CONSTRUCTOR");
+        **/
         this.id = id;
         this.name = name;
         this.gender = gender;

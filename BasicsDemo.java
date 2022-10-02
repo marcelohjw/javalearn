@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-class BasicsDemo{
+class BasicsDemo {
     static void print() {
         System.out.println("\n\nInside print ...");
         System.out.println("Hello world!");
@@ -204,9 +204,28 @@ class BasicsDemo{
         System.out.println("('a' + 'b'): " + ('a' + 'b')); // 'a' and 'b' are promoted to ints and the respective equivalents 97 and 98 are add
     }
 
-    public static void main(String[] args) {
+    // Comparison or Relational operators
+    static void comparisonOperators() {
+        int age = 25;
+        /*if (age > 21) {
+            System.out.println("Graduate Student");
+        }*/
+        System.out.println("Age > 21: " + (age > 21));
+        System.out.println("Age >= 21: " + (age >= 21));
+        System.out.println("Age < 21: " + (age < 21));
+        System.out.println("Age <= 21: " + (age <= 21));
+        System.out.println("Age == 21: " + (age == 21)); //equality operators
+        System.out.println("Age != 21: " + (age != 21)); //not equal
 
-        charTypePromotion();   
+        Student s1 = new Student(1000, "Marcelo", "male", 18, 987_654_321l, 3.8, '\u0042');
+        Student s2 = new Student(1000, "Marcelo", "male", 18, 987_654_321l, 3.8, '\u0042');
+        System.out.println("----------------");
+        System.out.println("s1 == s2: " + (s1 == s2));
+        System.out.println("s1 != s2: " + (s1 != s2));
+    }
+
+    public static void main(String[] args) {
+        comparisonOperators();   
     }
 
 }
