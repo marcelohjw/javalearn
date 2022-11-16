@@ -223,6 +223,19 @@ class BasicsDemo {
         System.out.println("----------------");
         System.out.println("s1 == s2: " + (s1 == s2));
         System.out.println("s1 != s2: " + (s1 != s2));
+
+        update(s1, "Celo");
+    }
+
+    static boolean update(Student s, String name) {
+        if(s == null) {
+            return false;
+        }
+
+        s.name = name;
+        System.out.println("Name Updated");
+
+        return true;
     }
 
     public static void main(String[] args) {
