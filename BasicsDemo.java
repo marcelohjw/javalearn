@@ -240,6 +240,25 @@ class BasicsDemo {
 
     static void logicalOperator() {
         System.out.println("--- LOGICAL OPERATORS PHASE ---");
+        String name = "Marcelindo";
+        int age = 26;
+        int salary = 7600;
+        boolean hasBadCredit = false;
+
+        if(age > 30 && salary < 7000) {
+            hasBadCredit = true;
+            System.out.println(hasBadCredit);
+        }
+
+        hasBadCredit = true;
+        System.out.println("--");
+        System.out.println("Ficha de " + name);
+        System.out.println("Idade: " + age);
+        System.out.println("Salário: " + salary);    
+
+        if (!hasBadCredit) {
+            System.out.println("Ta lascado irmao");
+        }
     }
 
     public static void main(String[] args) {
