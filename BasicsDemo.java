@@ -238,8 +238,12 @@ class BasicsDemo {
         return true;
     }
 
+    static void logicalOperator() {
+        System.out.println("--- LOGICAL OPERATORS PHASE ---");
+    }
+
     public static void main(String[] args) {
-        comparisonOperators();   
+        logicalOperator();   
     }
 
 }
