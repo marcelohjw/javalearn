@@ -279,8 +279,22 @@ class BasicsDemo {
         // Bitwise only work on Integer Types..
     }
 
+    static void switchExamples() {
+        System.out.println("Inside Switch study VVV");
+
+        int codex = 7 + 5;
+        switch(codex) {
+            case 5: System.out.println("Codex Pequeno!");
+                break;
+            case 10: System.out.println("Codex Médio!");
+                break;
+            case 12: System.out.println("Codex Grande!");
+                break;
+        }
+    }
+
     public static void main(String[] args) {
-        bitwiseOperators();   
+        switchExamples();   
     }
 
 }
