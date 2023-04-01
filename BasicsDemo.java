@@ -293,8 +293,14 @@ class BasicsDemo {
         }
     }
 
+    static int min(int x, int y) {
+        int result = (x < y) ? x : y;
+        return result;
+    }
+
     public static void main(String[] args) {
-        switchExamples();   
+        int min = min(9, 3);
+        System.out.println(min);
     }
 
 }
