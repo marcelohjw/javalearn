@@ -298,9 +298,14 @@ class BasicsDemo {
         return result;
     }
 
+    static void forState(int times, int number) {
+        for(; number < times; number++) {
+            System.out.println(number);
+        }
+    }
+
     public static void main(String[] args) {
-        int min = min(9, 3);
-        System.out.println(min);
+        forState(10, 3);
     }
 
 }
