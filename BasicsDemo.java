@@ -299,13 +299,56 @@ class BasicsDemo {
     }
 
     static void forState(int times, int number) {
-        for(; number < times; number++) {
+        for(; number < times; number += 2) {
             System.out.println(number);
         }
     }
 
+    static void forStateWithArray() {
+        int[] iArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        for (int i = 0, j = iArray.length - 1, middle = iArray.length >>> 1; i < middle; i++, j--) { // >>> is a division by 2 elevated by 1
+            int temp = iArray[i];
+            iArray[i] = iArray[j];
+            iArray[j] = temp;
+        }
+
+        for (int i = 0; i < iArray.length; i++) {
+            System.out.print(iArray[i] + " ");
+        }
+    }
+
+    static void countingDivisors() {
+        int x = 24;
+        System.out.println("\nCounting Divisors of " + x);
+        int count = 0;
+        for (int i = 1; i <= x; i++) {
+            if(x % i == 0) {
+                System.out.print(i + " ");
+                count++;
+            }
+        }
+
+        System.out.println("\ndivisors count: " + count);
+    }
+
+    // Two dimensionals Array
+    static void displayingGrades() {
+        System.out.println("\nDisplaying Student Grades");
+        int[][] studentGrades = {{10, 3, 4, 2}, {1, 8, 5, 2}, {2, 2, 2, 3}};
+
+        for (int i = 0; i < studentGrades.length; i++) {
+            System.out.println("\nDisplaying grades of section: " + i);
+            for (int j = 0; j < studentGrades[i].length; j++) {
+                System.out.print(studentGrades[i][j] + " ");
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        forState(10, 3);
+        // forState(10, 3);
+        forStateWithArray();
+        countingDivisors();
+        displayingGrades();
     }
 
 }
